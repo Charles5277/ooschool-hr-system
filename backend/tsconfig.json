@@ -1,0 +1,55 @@
+{
+  "compilerOptions": {
+    // Enable latest features
+    "lib": ["ESNext"],
+    "target": "ESNext",
+    "types": ["reflect-metadata"],
+    "module": "commonjs",
+    "moduleDetection": "force",
+    "allowJs": true,
+    "incremental": true,
+    "outDir": "dist",
+    "declaration": true,
+
+    // Bundler mode
+    "moduleResolution": "node",
+    "verbatimModuleSyntax": false,
+
+    // Best practices
+    "strict": true,
+    "skipLibCheck": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // Some stricter flags
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+
+    // Decorators
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+
+    // Allow default imports from modules with no default export
+    "allowSyntheticDefaultImports": true,
+
+    // Strict Type-Checking Options
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "strictBindCallApply": true,
+    "strictPropertyInitialization": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+
+    // Module Resolution Options
+    "baseUrl": ".",
+    "esModuleInterop": true,
+    "resolveJsonModule": false,
+
+    // Advanced Options
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": ["node_modules"]
+}

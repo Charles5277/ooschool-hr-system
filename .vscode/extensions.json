@@ -1,0 +1,40 @@
+{
+  "recommendations": [
+    "dbaeumer.vscode-eslint",
+    "esbenp.prettier-vscode",
+    "editorconfig.editorconfig",
+    "streetsidesoftware.code-spell-checker",
+    "wallabyjs.console-ninja",
+    "mhutchie.git-graph",
+    "github.copilot-chat",
+    "eamodio.gitlens",
+    "wix.vscode-import-cost",
+    "oderwat.indent-rainbow",
+    "ms-vscode.vscode-typescript-next",
+    "rvest.vs-code-prettier-eslint",
+    "codecoaching.quasar-docs",
+    "albert.tabout",
+    "formulahendry.auto-rename-tag",
+    "abdelaziz18003.quasar-snippets",
+    "vscode-icons-team.vscode-icons",
+    "devcharles5277.git-commit-plugin-with-gitmoji",
+    "amirha.better-comments-2",
+    "ms-edgedevtools.vscode-edge-devtools",
+    "usernamehw.errorlens",
+    "sdras.vue-vscode-snippets",
+    "sibiraj-s.vscode-scss-formatter",
+    "humao.rest-client",
+    "christian-kohler.path-intellisense",
+    "github.vscode-pull-request-github",
+    "vue.volar",
+    "lokalise.i18n-ally",
+    "ms-azuretools.vscode-docker",
+    "prisma.prisma"
+  ],
+  "unwantedRecommendations": [
+    "octref.vetur",
+    "hookyqr.beautify",
+    "dbaeumer.jshint",
+    "ms-vscode.vscode-typescript-tslint-plugin"
+  ]
+}

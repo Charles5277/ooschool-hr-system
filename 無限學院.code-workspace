@@ -1,0 +1,27 @@
+{
+  "folders": [
+    {
+      "path": "."
+    },
+    {
+      "path": "frontend"
+    },
+    {
+      "path": "backend"
+    }
+  ],
+  "settings": {
+    "cSpell.words": [
+      "bunx",
+      "camelcase",
+      "infraestructure",
+      "inversify",
+      "openapi",
+      "Parens",
+      "pkey",
+      "psql",
+      "tsoa"
+    ],
+    "editor.snippetSuggestions": "top"
+  }
+}

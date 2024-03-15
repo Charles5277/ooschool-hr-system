@@ -1,0 +1,118 @@
+{
+  // "選單提示文字": {
+  //   "prefix": "快捷關鍵字",
+  //   "body": ["內容，如：'<TitleSeparator />'"],
+  //   "description": "備忘文字"
+  // },
+  "vue SFC": {
+    "prefix": "vue",
+    "body": [
+      "<script setup>",
+      "  $1",
+      "</script>",
+      "",
+      "<template>",
+      "  <div>",
+      "  $2",
+      "  </div>",
+      "</template>",
+      "",
+      "<style lang='scss' scoped>",
+      "  $3",
+      "</style>",
+    ],
+  },
+  "<script setup>": {
+    "prefix": "setup",
+    "body": ["<script setup>", "  $1", "</script>"],
+  },
+  "form-valid": {
+    "prefix": "valid",
+    "body": [":rules=\"[(v) => valid.$1(v)]\""],
+  },
+  "form-valid: required": {
+    "prefix": "valid_required",
+    "body": [":rules=\"[(v) => valid.required(v)]\""],
+  },
+  "標題與內容分隔線": {
+    "prefix": "separatorTitle",
+    "body": ["<TitleSeparator />", "$1"],
+  },
+  "template #prepend": {
+    "prefix": "prependSlot",
+    "body": ["<template #prepend>", "  $1", "</template>"],
+  },
+  "template #append": {
+    "prefix": "appendSlot",
+    "body": ["<template #append>", "  $1", "</template>"],
+  },
+  "Quasar Notify Script": {
+    "prefix": "qNotify",
+    "body": [
+      "export const \"$1\" = () => {",
+      "  Notify.create({",
+      "    message: '$2',",
+      "    type: '$3',",
+      "  });",
+      "};",
+      "$4",
+    ],
+  },
+  "i18n template": {
+    "prefix": "text i18n",
+    "body": ["{{ t('$1') }}"],
+  },
+  "GET template - REST Clinet": {
+    "prefix": "API_GET_teamplate",
+    "body": [
+      "### - GET /$1",
+      "GET {{ prefixHost }}/$2",
+      "  ?field=title",
+      "  &sort=title",
+      "Content-Type: application/json",
+      "$3",
+    ],
+  },
+  "POST template - REST Clinet": {
+    "prefix": "API_POST_teamplate",
+    "body": [
+      "### - POST /$1",
+      "POST {{ prefixHost }}/$2",
+      "  ?field=title",
+      "  &sort=title",
+      "Content-Type: application/json",
+      "",
+      "{",
+      "  $3",
+      "}",
+    ],
+  },
+  "PATCH template - REST Clinet": {
+    "prefix": "API_PATCH_teamplate",
+    "body": [
+      "### - PATCH /$1",
+      "PATCH {{ prefixHost }}/$2",
+      "  ?field=title",
+      "  &sort=title",
+      "Content-Type: application/json",
+      "",
+      "{",
+      "  $3",
+      "}",
+    ],
+  },
+  "DELETE template - REST Clinet": {
+    "prefix": "API_DELETE_teamplate",
+    "body": [
+      "### - DELETE /$1",
+      "DELETE {{ prefixHost }}/$2",
+      "  ?field=title",
+      "  &sort=title",
+      "Content-Type: application/json",
+      "",
+      "{",
+      "  $3",
+      "}",
+    ],
+  },
+}
