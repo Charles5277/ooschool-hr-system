@@ -8,7 +8,8 @@ export const app = express();
 
 app.use('/api/docs', swaggerUi.serve, async (_req: ExRequest, res: ExResponse) => {
   // Use path.resolve to get the absolute path of the swagger.json file
-  const swaggerJson = await import(path.resolve(__dirname, '../build/swagger.json'));
+  const swaggerJson = await import(path.resolve(__dirname, '../swagger.json'));
+
   return res.send(swaggerUi.generateHTML(swaggerJson));
 });
 
