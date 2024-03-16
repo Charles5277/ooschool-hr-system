@@ -6,10 +6,10 @@
     "dev": "bun run build && node dist/src/server.js",
     "dev-prisma-studio": "bunx prisma studio",
     "lint": "eslint . --ext .ts",
-    "db:generate": "npx prisma generate",
-    "db:migrate": "npx prisma migrate dev",
-    "db:deploy": "npx prisma migrate deploy",
-    "db:push": "npx prisma db push",
+    "db:generate": "bunx prisma generate",
+    "db:migrate": "bunx prisma migrate dev",
+    "db:deploy": "bunx prisma migrate deploy",
+    "db:push": "bunx prisma db push",
     "db:seed": "ts-node src/seed/seed.ts"
   },
   "devDependencies": {
