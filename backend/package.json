@@ -3,7 +3,7 @@
   "module": "index.ts",
   "scripts": {
     "build": "bun db:generate && tsoa spec-and-routes && bun tsc",
-    "dev": "bun run build && node dist/src/server.js",
+    "dev": "bun run build && nodemon dist/src/server.js",
     "dev-prisma-studio": "bunx prisma studio",
     "lint": "eslint . --ext .ts",
     "db:generate": "bunx prisma generate",
