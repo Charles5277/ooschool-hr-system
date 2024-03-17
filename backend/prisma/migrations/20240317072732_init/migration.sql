@@ -1,17 +1,3 @@
-/*
-  Warnings:
-
-  - You are about to drop the column `age` on the `User` table. All the data in the column will be lost.
-  - A unique constraint covering the columns `[email]` on the table `User` will be added. If there are existing duplicate values, this will fail.
-  - Added the required column `email` to the `User` table without a default value. This is not possible if the table is not empty.
-
-*/
--- AlterTable
-ALTER TABLE "User" DROP COLUMN "age",
-ADD COLUMN     "email" TEXT NOT NULL,
-ALTER COLUMN "name" DROP NOT NULL,
-ALTER COLUMN "name" SET DATA TYPE TEXT;
-
 -- CreateTable
 CREATE TABLE "Post" (
     "id" SERIAL NOT NULL,
@@ -32,6 +18,15 @@ CREATE TABLE "Profile" (
     "userId" INTEGER NOT NULL,
 
     CONSTRAINT "Profile_pkey" PRIMARY KEY ("id")
+);
+
+-- CreateTable
+CREATE TABLE "User" (
+    "id" SERIAL NOT NULL,
+    "email" TEXT NOT NULL,
+    "name" TEXT,
+
+    CONSTRAINT "User_pkey" PRIMARY KEY ("id")
 );
 
 -- CreateIndex

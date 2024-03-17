@@ -1,4 +1,4 @@
-import prisma from '../../../prisma';
+import prisma from '../../../prisma/seed';
 import { IProductRepository } from '../domain/interfaces/product.interface';
 import { Product } from '../domain/product';
 
