@@ -24,6 +24,7 @@
     "bun": "^1.0.30",
     "bun-types": "latest",
     "eslint": "latest",
+    "nodemon": "^3.1.0",
     "pg": "^8.11.3",
     "prettier-plugin-prisma": "^5.0.0",
     "prisma": "^5.11.0",
