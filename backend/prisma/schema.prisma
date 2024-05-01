@@ -5,7 +5,8 @@
 // Try Prisma Accelerate: https://pris.ly/cli/accelerate-init
 
 generator client {
-  provider = "prisma-client-js"
+  provider        = "prisma-client-js"
+  previewFeatures = ["postgresqlExtensions"]
 }
 
 datasource db {
@@ -13,23 +14,10 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
-model Product {
-  productId Int    @id @default(autoincrement())
-  name      String
-  price     Float
-
-  orders Order[]
-
-  @@map("products")
-}
-
-model Order {
-  orderId   Int      @id @default(autoincrement())
-  total     Float
-  productId Int
-  createdAt DateTime @default(now())
-
-  products Product @relation(references: [productId], fields: [productId])
-
-  @@map("orders")
+model employees {
+  emp_id           String   @id @unique
+  emp_name         String   @db.VarChar(50)
+  hire_date        DateTime @db.Date
+  termination_date DateTime @db.Date
+  depart_id        String   @db.Char(3)
 }
