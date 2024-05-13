@@ -9,5 +9,11 @@
   "routes": {
     "routesDir": "src",
     "iocModule": "src/ioc.ts"
+  },
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "@/*": "*"
+    }
   }
 }

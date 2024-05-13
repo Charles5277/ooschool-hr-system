@@ -1,15 +1,10 @@
-import { Container, decorate, injectable } from 'inversify';
-import { PrismaClient } from '@prisma/client';
-import { Controller } from 'tsoa';
+// src/utils/ioc.ts
 
-// 創建 PrismaClient 的單例
-const prismaClient = new PrismaClient();
+import { interfaces, inject } from 'inversify';
+import { fluentProvide } from 'inversify-binding-decorators';
 
-// 創建 InversifyJS 容器
-const iocContainer = new Container();
+const ProvideSingleton = function <T>(identifier: interfaces.ServiceIdentifier<T>) {
+  return fluentProvide(identifier).inSingletonScope().done();
+};
 
-// 註冊 PrismaClient 到容器中
-iocContainer.bind<PrismaClient>('PrismaClient').toConstantValue(prismaClient);
-decorate(injectable, Controller);
-
-export { iocContainer };
+export { ProvideSingleton, inject };
